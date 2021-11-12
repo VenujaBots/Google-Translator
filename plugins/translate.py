@@ -12,11 +12,11 @@ from helper.langlist import langlist
 async def start(client, message):
           insert(int(message.chat.id))
           await message.reply_sticker(sticker = "CAACAgUAAxkBAAEBN9FhhMQq99NL0eY70r47LmPghi9fsQAC2QUAAss5KFT5r0lsTegDZiIE")
-          await message.reply_text(text =f"👋 Hello **{message.from_user.first_name }**. \n\nI am simple Google Translater Bot.**I can translate any language to you selected language** My Dear **`{message.from_user.first_name }`**  __\n\n**Powerd By** @SDbotsz. 🔥",
-          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("SDBOTs News 🙋‍♀️", url="https://t.me/SDBOTs_Inifinity")],
-               [InlineKeyboardButton("Bot Support 💬", url="https://t.me/SDBOTz"),
-	       InlineKeyboardButton("Scource 💾", url="https://Github.com/Sadew451"),
-	       InlineKeyboardButton("Devoloper 👑",url = "https://t.me/Itz_Sadew")]])
+          await message.reply_text(text =f"👋 Hello **{message.from_user.first_name }**. \n\nI am Vd Google Translater Bot.**I can translate any language to you selected language** User **`{message.from_user.first_name }`**  __\n\n**Powerd By** @Venuja_Sadew. 🔥",
+          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("➕ Add Me To Your Group ➕", url="http://t.me/VdGoogleTranslatorBot?startgroup=true")],
+               [InlineKeyboardButton("Support 💬", url="https://t.me/vndbotsupport"),
+	       InlineKeyboardButton("Scource 💾", url="https://github.com/VenujaBots"),
+	       InlineKeyboardButton("Devoloper 👑",url ="https://t.me/Venuja_Sadew")]])
 	  ),
 
 @Client.on_message(filters.private & filters.text  )
@@ -70,9 +70,9 @@ async def echo(client, message):
 							fromt = i
 						if list[i] == translation.dest:
 							to = i
-					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @lntechnical")
+					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @vndbotsupport")
 			except Exception as e:
-					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @lntechnical")
+					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @vndbotsupport")
 	else:
 		await  message.reply_text("Select language 🔽",reply_to_message_id = message.message_id, reply_markup =keybord1)
 
@@ -288,9 +288,9 @@ async def translate_text(bot,update):
       					fromt = i
       				if list[i] == translation.dest:
       					to = i 
-      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @lntechnical")
+      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @vndbotsupport")
       		except Exception as e:
-      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @lntechnical")
+      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @vndbotsupport")
       						
 
             
@@ -345,9 +345,9 @@ async def echo(client, message):
 							fromt = i
 						if list[i] == translation.dest:
 							to = i
-					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @SDBotsz 🔥")
+					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @vndbotsupport🔥")
 			except Exception as e:
-					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n We Are @SDBOTz join @SDBotsz 🔥")
+					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n We Are @vndbotsupport join @vndbotsupport 🔥")
 	else:
 		await  message.reply_text("Select language 🔽",reply_to_message_id = message.message_id, reply_markup =keybord1)
 
@@ -563,7 +563,7 @@ async def translate_text(bot,update):
       					fromt = i
       				if list[i] == translation.dest:
       					to = i 
-      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n{translation.text}\n\n join @SDBotsz 🔥")
+      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n{translation.text}\n\n join @vndbotsupport 🔥")
       		except Exception as e:
-      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n{translation.text}\n\n join @SDBotsz 🔥")
+      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n{translation.text}\n\n join @vndbotsupport 🔥")
       						
