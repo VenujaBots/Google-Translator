@@ -51,25 +51,23 @@ async def echo(client, message):
 	[InlineKeyboardButton("▶️",callback_data = "page2")
 	]
 	] )
-		
-	if code :
-			try:
-				translator = Translator()
-				translation = translator.translate(message.text,dest = code)
-			except Exception as e:
-				await message.reply_text(f"Error : {e}")
-				return
-			try:
-					for i in list:
-						if list[i]==translation.src:
-							fromt = i
-						if list[i] == translation.dest:
-							to = i
-					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @vndbotsupport")
-			except Exception as e:
-					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @vndbotsupport")
-	else:
-		await  message.reply_text("Select language 🔽",reply_to_message_id = message.message_id, reply_markup =keybord1)
+	.dest}**\n\n```{translation.text}```\n\n join @vndbotsupport")
+	else:	
+	try:
+      			translator = Translator()
+      			translation = translator.translate(tr_text,dest = cb_data)
+      		except Exception as e:
+      			await update.message.edit(f"Error : {e}")
+      			return
+      		try:
+      			for i in list:
+      				if list[i]==translation.src:
+      					fromt = i
+      				if list[i] == translation.dest:
+      					to = i 
+      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @vndbotsupport")
+      		except Exception as e:
+      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @vndbotsupport")
 
 @Client.on_callback_query()
 async def translate_text(bot,update):
