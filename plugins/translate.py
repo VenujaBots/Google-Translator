@@ -51,11 +51,6 @@ async def echo(client, message):
 	[InlineKeyboardButton("▶️",callback_data = "page2")
 	]
 	] )
-	try:
-		code =find(int(message.chat.id))
-	except Exception as e:
-		await message.reply_text(f" Error : {e}\nclick /start ........")
-		return 
 		
 	if code :
 			try:
