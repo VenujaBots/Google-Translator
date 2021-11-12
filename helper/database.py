@@ -4,9 +4,9 @@ import pymongo
 
 import os
 
-DB_NAME = os.environ.get("DB_NAME","")
+DB_NAME = os.environ.get("DB_NAME","Vndgroup1")
 
-DB_URL = os.environ.get("DB_URL","")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://Vndgroup1:Vndgroup1@cluster0.wo74t.mongodb.net/cluster0?retryWrites=true&w=majority")
 
 mongo = pymongo.MongoClient(DB_URL)
 
