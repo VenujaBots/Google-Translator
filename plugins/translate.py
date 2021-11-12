@@ -12,7 +12,7 @@ from helper.langlist import langlist
 async def start(client, message):
           insert(int(message.chat.id))
           await message.reply_sticker(sticker = "CAACAgUAAxkBAAEBN9FhhMQq99NL0eY70r47LmPghi9fsQAC2QUAAss5KFT5r0lsTegDZiIE")
-          await message.reply_text(text =f"👋 Hello **{message.from_user.first_name }**. \n\nI am Vd Google Translater Bot.**I can translate any language to you selected language** User **`{message.from_user.first_name }`**  __\n\n**Powerd By** @Venuja_Sadew. 🔥",
+          await message.reply_text(text =f"👋 Hello **{message.from_user.first_name }**. \n\n**I am [Vd Google Translater Bot](http://t.me/VdGoogleTranslatorBot)**.**I can translate any language to you selected language**  __\n\n**Powerd By** @Venuja_Sadew. 🔥",
           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("➕ Add Me To Your Group ➕", url="http://t.me/VdGoogleTranslatorBot?startgroup=true")],
                [InlineKeyboardButton("Support 💬", url="https://t.me/vndbotsupport"),
 	       InlineKeyboardButton("Scource 💾", url="https://github.com/VenujaBots"),
